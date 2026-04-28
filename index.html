@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Minanul Aziz — A curious mind exploring technology, vibe coding, and new possibilities." />
+    <meta name="author" content="Minanul Aziz" />
+    <meta name="theme-color" content="#0a0a0f" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Minanul Aziz — Personal Portfolio" />
+    <meta property="og:description" content="A curious mind exploring technology, vibe coding, and new possibilities." />
+    <meta property="og:type" content="website" />
+
+    <title>Minanul Aziz — Personal Portfolio</title>
+
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Modern sans-serif fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    />
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <!-- Animated background: gradient orbs + grid -->
+    <div class="bg-layer" aria-hidden="true">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+        <div class="grid-overlay"></div>
+    </div>
+
+    <!-- Custom cursor (desktop only, disabled on touch devices via CSS/JS) -->
+    <div class="cursor-dot" aria-hidden="true"></div>
+    <div class="cursor-ring" aria-hidden="true"></div>
+
+    <!-- Scroll progress bar -->
+    <div class="scroll-progress" aria-hidden="true"></div>
+
+    <!-- Navbar -->
+    <header class="navbar" id="navbar">
+        <a href="#hero" class="logo" aria-label="Minanul Aziz — home">
+            <span class="logo-dot"></span>
+            <span class="logo-text">M.<span class="logo-accent">Aziz</span></span>
+        </a>
+
+        <nav class="nav-links" aria-label="Primary navigation">
+            <a href="#about" class="nav-link">About</a>
+            <a href="#skills" class="nav-link">Skills</a>
+            <a href="#projects" class="nav-link">Projects</a>
+            <a href="#contact" class="nav-link">Contact</a>
+        </nav>
+
+        <a href="#contact" class="nav-cta">
+            Let's talk
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path>
+            </svg>
+        </a>
+
+        <!-- Mobile menu toggle -->
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+    </header>
+
+    <!-- Mobile drawer -->
+    <div class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
+        <a href="#about" class="drawer-link">About</a>
+        <a href="#skills" class="drawer-link">Skills</a>
+        <a href="#projects" class="drawer-link">Projects</a>
+        <a href="#contact" class="drawer-link">Contact</a>
+    </div>
+
+    <main>
+        <!-- ============== HERO ============== -->
+        <section class="hero" id="hero">
+            <div class="hero-inner">
+                <span class="badge reveal" data-delay="0">
+                    <span class="badge-dot"></span>
+                    Available for collaboration
+                </span>
+
+                <h1 class="hero-name reveal" data-delay="100">
+                    <span class="word">Minanul</span>
+                    <span class="word gradient-text">Aziz</span>
+                </h1>
+
+                <p class="hero-tagline reveal" data-delay="220">
+                    A curious mind crafting calm, thoughtful experiences at the intersection of
+                    <span class="accent">technology</span>,
+                    <span class="accent">design</span>, and
+                    <span class="accent">good vibes</span>.
+                </p>
+
+                <p class="hero-sub reveal" data-delay="320">
+                    Exploring new tools, building quietly, and shipping ideas that feel just right.
+                </p>
+
+                <div class="hero-cta reveal" data-delay="440">
+                    <a href="#projects" class="btn btn-primary">
+                        View my work
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path>
+                        </svg>
+                    </a>
+                    <a href="#contact" class="btn btn-ghost">Get in touch</a>
+                </div>
+
+                <!-- Hero meta strip -->
+                <div class="hero-meta reveal" data-delay="560">
+                    <div class="meta-item">
+                        <span class="meta-num">3+</span>
+                        <span class="meta-label">Years exploring code</span>
+                    </div>
+                    <span class="meta-divider"></span>
+                    <div class="meta-item">
+                        <span class="meta-num">∞</span>
+                        <span class="meta-label">Curious experiments</span>
+                    </div>
+                    <span class="meta-divider"></span>
+                    <div class="meta-item">
+                        <span class="meta-num">UTC+7</span>
+                        <span class="meta-label">Based in Indonesia</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Scroll hint -->
+            <div class="scroll-hint" aria-hidden="true">
+                <span>Scroll</span>
+                <div class="scroll-line"></div>
+            </div>
+        </section>
+
+        <!-- ============== ABOUT ============== -->
+        <section class="section" id="about">
+            <div class="section-head reveal">
+                <span class="section-tag">01 — About</span>
+                <h2 class="section-title">A short story <br/>about <span class="gradient-text">me</span>.</h2>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-text reveal" data-delay="100">
+                    <p>
+                        Hi, I'm <strong>Minanul Aziz</strong> — a tech enthusiast who genuinely enjoys the
+                        process of <em>vibe coding</em>: that calm, focused state where curiosity meets craft.
+                    </p>
+                    <p>
+                        I love poking at new tools, breaking things to understand them, and turning small ideas into
+                        polished little projects. I care about details — the kind of micro‑interactions and quiet
+                        animations that make a product <em>feel</em> right.
+                    </p>
+                    <p>
+                        Outside of code, I'm usually exploring new music, reading about design systems, or thinking about
+                        how to make tomorrow's work a little more thoughtful than today's.
+                    </p>
+                </div>
+
+                <div class="about-card reveal" data-delay="220">
+                    <div class="about-card-header">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                        <span class="filename">about.json</span>
+                    </div>
+                    <pre class="about-code"><code><span class="c-key">"name"</span>: <span class="c-str">"Minanul Aziz"</span>,
+<span class="c-key">"role"</span>: <span class="c-str">"Curious Builder"</span>,
+<span class="c-key">"focus"</span>: [<span class="c-str">"Web"</span>, <span class="c-str">"UI/UX"</span>, <span class="c-str">"AI"</span>],
+<span class="c-key">"vibe"</span>: <span class="c-str">"calm + curious"</span>,
+<span class="c-key">"learning"</span>: <span class="c-str">"something new, always"</span>,
+<span class="c-key">"open_to_work"</span>: <span class="c-bool">true</span></code></pre>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============== SKILLS ============== -->
+        <section class="section" id="skills">
+            <div class="section-head reveal">
+                <span class="section-tag">02 — Skills</span>
+                <h2 class="section-title">Tools I enjoy <br/>working <span class="gradient-text">with</span>.</h2>
+            </div>
+
+            <div class="skills-grid">
+                <!-- Frontend -->
+                <article class="skill-card reveal" data-delay="0">
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <rect x="3" y="3" width="18" height="18" rx="3"></rect>
+                            <path d="M3 9h18M9 21V9"></path>
+                        </svg>
+                    </div>
+                    <h3>Frontend</h3>
+                    <p>Building clean, responsive interfaces with modern HTML, CSS, and JavaScript.</p>
+                    <div class="skill-bar"><div class="skill-fill" data-fill="92"></div></div>
+                    <ul class="chip-row">
+                        <li>HTML5</li><li>CSS3</li><li>Tailwind</li><li>React</li>
+                    </ul>
+                </article>
+
+                <!-- Backend -->
+                <article class="skill-card reveal" data-delay="80">
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                            <path d="M3 5v6c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                            <path d="M3 11v6c0 1.66 4 3 9 3s9-1.34 9-3v-6"></path>
+                        </svg>
+                    </div>
+                    <h3>Backend & APIs</h3>
+                    <p>Designing simple, reliable services and connecting the dots between systems.</p>
+                    <div class="skill-bar"><div class="skill-fill" data-fill="80"></div></div>
+                    <ul class="chip-row">
+                        <li>Node.js</li><li>Python</li><li>REST</li><li>SQL</li>
+                    </ul>
+                </article>
+
+                <!-- Design -->
+                <article class="skill-card reveal" data-delay="160">
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <circle cx="12" cy="12" r="9"></circle>
+                            <circle cx="12" cy="12" r="3"></circle>
+                            <path d="M12 3v3M12 18v3M3 12h3M18 12h3"></path>
+                        </svg>
+                    </div>
+                    <h3>UI / UX Design</h3>
+                    <p>Crafting interfaces that feel calm, considered, and genuinely human.</p>
+                    <div class="skill-bar"><div class="skill-fill" data-fill="85"></div></div>
+                    <ul class="chip-row">
+                        <li>Figma</li><li>Design Systems</li><li>Prototyping</li>
+                    </ul>
+                </article>
+
+                <!-- Tools -->
+                <article class="skill-card reveal" data-delay="240">
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M14.7 6.3a4 4 0 1 0 3 3L21 6V3h-3l-3.3 3.3z"></path>
+                            <path d="M14 10 4 20l-1.5-1.5L12.5 8.5"></path>
+                        </svg>
+                    </div>
+                    <h3>Workflow & Tools</h3>
+                    <p>Working comfortably with the tools that keep code shipping smoothly.</p>
+                    <div class="skill-bar"><div class="skill-fill" data-fill="88"></div></div>
+                    <ul class="chip-row">
+                        <li>Git</li><li>VS Code</li><li>Linux</li><li>CI/CD</li>
+                    </ul>
+                </article>
+
+                <!-- AI -->
+                <article class="skill-card reveal" data-delay="320">
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M12 2a4 4 0 0 0-4 4v1a4 4 0 0 0-4 4 4 4 0 0 0 4 4v1a4 4 0 0 0 8 0v-1a4 4 0 0 0 4-4 4 4 0 0 0-4-4V6a4 4 0 0 0-4-4z"></path>
+                            <path d="M9 9h.01M15 9h.01"></path>
+                        </svg>
+                    </div>
+                    <h3>AI & Automation</h3>
+                    <p>Exploring AI tools to ship faster, learn deeper, and remove the boring bits.</p>
+                    <div class="skill-bar"><div class="skill-fill" data-fill="78"></div></div>
+                    <ul class="chip-row">
+                        <li>LLMs</li><li>Prompting</li><li>Automation</li>
+                    </ul>
+                </article>
+
+                <!-- Soft skills -->
+                <article class="skill-card reveal" data-delay="400">
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                        </svg>
+                    </div>
+                    <h3>Mindset</h3>
+                    <p>Calm under pressure, curious by default, and obsessed with the small details.</p>
+                    <div class="skill-bar"><div class="skill-fill" data-fill="95"></div></div>
+                    <ul class="chip-row">
+                        <li>Curiosity</li><li>Focus</li><li>Craft</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <!-- ============== PROJECTS ============== -->
+        <section class="section" id="projects">
+            <div class="section-head reveal">
+                <span class="section-tag">03 — Projects</span>
+                <h2 class="section-title">Selected <span class="gradient-text">work</span>.</h2>
+                <p class="section-sub">A small collection of things I've built, broken, and learned from.</p>
+            </div>
+
+            <div class="projects-grid">
+                <a href="#" class="project-card reveal" data-delay="0">
+                    <div class="project-visual project-1">
+                        <span class="project-tag">Web App</span>
+                    </div>
+                    <div class="project-body">
+                        <h3>Lumen Notes</h3>
+                        <p>A minimalist note‑taking app focused on flow, keyboard speed, and quiet UI.</p>
+                        <ul class="chip-row small">
+                            <li>React</li><li>Tailwind</li><li>IndexedDB</li>
+                        </ul>
+                    </div>
+                    <span class="project-arrow">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M7 17 17 7"></path><path d="M7 7h10v10"></path>
+                        </svg>
+                    </span>
+                </a>
+
+                <a href="#" class="project-card reveal" data-delay="100">
+                    <div class="project-visual project-2">
+                        <span class="project-tag">Landing</span>
+                    </div>
+                    <div class="project-body">
+                        <h3>Vibe Studio</h3>
+                        <p>A landing page experiment exploring glassmorphism, gradients, and gentle motion.</p>
+                        <ul class="chip-row small">
+                            <li>HTML</li><li>CSS</li><li>GSAP</li>
+                        </ul>
+                    </div>
+                    <span class="project-arrow">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M7 17 17 7"></path><path d="M7 7h10v10"></path>
+                        </svg>
+                    </span>
+                </a>
+
+                <a href="#" class="project-card reveal" data-delay="200">
+                    <div class="project-visual project-3">
+                        <span class="project-tag">AI Tool</span>
+                    </div>
+                    <div class="project-body">
+                        <h3>Prompt Garden</h3>
+                        <p>A small playground for organizing prompts, snippets, and AI experiments.</p>
+                        <ul class="chip-row small">
+                            <li>Next.js</li><li>OpenAI</li><li>Postgres</li>
+                        </ul>
+                    </div>
+                    <span class="project-arrow">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M7 17 17 7"></path><path d="M7 7h10v10"></path>
+                        </svg>
+                    </span>
+                </a>
+
+                <a href="#" class="project-card reveal" data-delay="300">
+                    <div class="project-visual project-4">
+                        <span class="project-tag">Open Source</span>
+                    </div>
+                    <div class="project-body">
+                        <h3>Tiny UI Kit</h3>
+                        <p>A hand‑picked set of accessible, theme‑able components for hobby projects.</p>
+                        <ul class="chip-row small">
+                            <li>TypeScript</li><li>Vite</li><li>Storybook</li>
+                        </ul>
+                    </div>
+                    <span class="project-arrow">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M7 17 17 7"></path><path d="M7 7h10v10"></path>
+                        </svg>
+                    </span>
+                </a>
+            </div>
+        </section>
+
+        <!-- ============== CONTACT ============== -->
+        <section class="section contact" id="contact">
+            <div class="contact-card reveal">
+                <span class="section-tag">04 — Contact</span>
+                <h2 class="section-title big">Let's build something <br/><span class="gradient-text">good together.</span></h2>
+                <p class="contact-sub">
+                    Have an idea, a project, or just want to say hi? My inbox is always open.
+                </p>
+
+                <div class="contact-actions">
+                    <a class="btn btn-primary" href="https://wa.me/6281234567890?text=Hi%20Minanul%2C%20I%20saw%20your%20portfolio!" target="_blank" rel="noopener noreferrer">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                            <path d="M20.52 3.48A11.78 11.78 0 0 0 12.06 0C5.5 0 .18 5.32.18 11.88c0 2.09.55 4.13 1.6 5.93L0 24l6.36-1.66a11.86 11.86 0 0 0 5.69 1.45h.01c6.55 0 11.88-5.32 11.88-11.88 0-3.18-1.24-6.16-3.42-8.43zM12.06 21.5h-.01a9.6 9.6 0 0 1-4.89-1.34l-.35-.21-3.77.99 1.01-3.67-.23-.38a9.59 9.59 0 0 1-1.47-5.01c0-5.31 4.32-9.63 9.62-9.63 2.57 0 4.99 1 6.81 2.82a9.56 9.56 0 0 1 2.82 6.81c0 5.31-4.32 9.62-9.54 9.62zm5.55-7.21c-.3-.15-1.79-.88-2.07-.98-.28-.1-.48-.15-.68.15-.2.3-.78.98-.96 1.18-.18.2-.35.22-.65.07-.3-.15-1.27-.47-2.42-1.5-.9-.8-1.5-1.79-1.68-2.09-.18-.3-.02-.46.13-.61.13-.13.3-.35.45-.53.15-.18.2-.3.3-.5.1-.2.05-.38-.02-.53-.07-.15-.68-1.63-.93-2.23-.24-.59-.5-.51-.68-.52l-.58-.01a1.1 1.1 0 0 0-.8.38c-.27.3-1.04 1.02-1.04 2.5s1.07 2.9 1.22 3.1c.15.2 2.1 3.21 5.08 4.5.71.31 1.26.5 1.69.64.71.23 1.36.2 1.87.12.57-.08 1.79-.73 2.05-1.43.25-.7.25-1.3.18-1.43-.07-.13-.27-.2-.57-.35z"></path>
+                        </svg>
+                        Chat on WhatsApp
+                    </a>
+                    <a class="btn btn-ghost" href="mailto:yuediyuedi8@gmail.com">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <rect x="3" y="5" width="18" height="14" rx="2"></rect>
+                            <path d="m3 7 9 6 9-6"></path>
+                        </svg>
+                        Send an email
+                    </a>
+                </div>
+
+                <ul class="socials" aria-label="Social media">
+                    <li><a href="https://github.com/azizkuntulannnn" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5a12 12 0 0 0-3.79 23.4c.6.11.82-.26.82-.58v-2c-3.34.73-4.04-1.6-4.04-1.6-.55-1.39-1.34-1.76-1.34-1.76-1.1-.75.08-.74.08-.74 1.21.09 1.85 1.24 1.85 1.24 1.07 1.84 2.81 1.31 3.5 1 .11-.78.42-1.31.76-1.61-2.66-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.11-3.16 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.29-1.55 3.3-1.23 3.3-1.23.65 1.64.24 2.86.12 3.16.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.62-5.49 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58A12 12 0 0 0 12 .5z"/></svg>
+                    </a></li>
+                    <li><a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5.001 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM10 9h3.8v1.71h.05c.53-1 1.83-2.06 3.77-2.06 4.03 0 4.78 2.65 4.78 6.1V21h-4v-5.36c0-1.28-.02-2.93-1.78-2.93-1.78 0-2.05 1.39-2.05 2.83V21h-4z"/></svg>
+                    </a></li>
+                    <li><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.2c3.2 0 3.58.01 4.85.07 1.17.05 1.96.24 2.42.4.61.24 1.04.52 1.5.98.46.46.74.89.98 1.5.16.46.35 1.25.4 2.42.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.24 1.96-.4 2.42-.24.61-.52 1.04-.98 1.5-.46.46-.89.74-1.5.98-.46.16-1.25.35-2.42.4-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.96-.24-2.42-.4a4.16 4.16 0 0 1-1.5-.98 4.16 4.16 0 0 1-.98-1.5c-.16-.46-.35-1.25-.4-2.42C2.21 15.58 2.2 15.2 2.2 12s.01-3.58.07-4.85c.05-1.17.24-1.96.4-2.42.24-.61.52-1.04.98-1.5.46-.46.89-.74 1.5-.98.46-.16 1.25-.35 2.42-.4C8.42 2.21 8.8 2.2 12 2.2zM12 0C8.74 0 8.33.01 7.05.07 5.78.13 4.9.32 4.14.6c-.79.3-1.46.7-2.13 1.37C1.34 2.64.93 3.31.63 4.1.35 4.86.16 5.74.1 7.01.04 8.29.03 8.7.03 12s.01 3.71.07 4.99c.06 1.27.25 2.15.53 2.91.3.79.7 1.46 1.37 2.13.67.67 1.34 1.07 2.13 1.37.76.28 1.64.47 2.91.53C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c1.27-.06 2.15-.25 2.91-.53.79-.3 1.46-.7 2.13-1.37.67-.67 1.07-1.34 1.37-2.13.28-.76.47-1.64.53-2.91.06-1.28.07-1.69.07-4.99s-.01-3.71-.07-4.99c-.06-1.27-.25-2.15-.53-2.91a5.86 5.86 0 0 0-1.37-2.13A5.86 5.86 0 0 0 19.86.6c-.76-.28-1.64-.47-2.91-.53C15.67.01 15.26 0 12 0zm0 5.84a6.16 6.16 0 1 0 0 12.32 6.16 6.16 0 0 0 0-12.32zm0 10.16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.41-10.4a1.44 1.44 0 1 1 0-2.88 1.44 1.44 0 0 1 0 2.88z"/></svg>
+                    </a></li>
+                    <li><a href="https://x.com/" target="_blank" rel="noopener noreferrer" aria-label="X / Twitter">
+                        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2H21l-6.52 7.45L22 22h-6.787l-4.74-6.2L4.8 22H2l6.97-7.96L2 2h6.94l4.28 5.66L18.244 2zm-2.39 18.04h1.88L7.27 3.86H5.27l10.585 16.18z"/></svg>
+                    </a></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-inner">
+            <span>© <span id="year"></span> Minanul Aziz — Crafted with care &amp; calm.</span>
+            <a href="#hero" class="back-top">
+                Back to top
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M12 19V5"></path><path d="m5 12 7-7 7 7"></path>
+                </svg>
+            </a>
+        </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
