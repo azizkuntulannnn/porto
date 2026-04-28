@@ -53,7 +53,7 @@
         <nav class="nav-links" aria-label="Navigasi utama">
             <a href="#about" class="nav-link">Tentang</a>
             <a href="#skills" class="nav-link">Keahlian</a>
-            <a href="#projects" class="nav-link">Proyek</a>
+            <a href="#projects" class="nav-link">Tool</a>
             <a href="#contact" class="nav-link">Kontak</a>
         </nav>
 
@@ -74,7 +74,7 @@
     <div class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
         <a href="#about" class="drawer-link">Tentang</a>
         <a href="#skills" class="drawer-link">Keahlian</a>
-        <a href="#projects" class="drawer-link">Proyek</a>
+        <a href="#projects" class="drawer-link">Tool</a>
         <a href="#contact" class="drawer-link">Kontak</a>
     </div>
 
@@ -105,7 +105,7 @@
 
                 <div class="hero-cta reveal" data-delay="440">
                     <a href="#projects" class="btn btn-primary">
-                        Lihat karya saya
+                        Lihat tool saya
                         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                             <path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path>
                         </svg>
@@ -287,87 +287,92 @@
             </div>
         </section>
 
-        <!-- ============== PROJECTS ============== -->
+        <!-- ============== TOOL BUATAN SAYA ============== -->
         <section class="section" id="projects">
             <div class="section-head reveal">
-                <span class="section-tag">03 — Proyek</span>
-                <h2 class="section-title">Karya <span class="gradient-text">pilihan</span>.</h2>
-                <p class="section-sub">Kumpulan kecil hal-hal yang pernah saya bangun, bongkar, dan jadikan pelajaran.</p>
+                <span class="section-tag">03 — Tool Buatan Saya</span>
+                <h2 class="section-title">Tool buatan <span class="gradient-text">saya</span>.</h2>
+                <p class="section-sub">Sebuah tool kecil yang saya kerjakan, gratis dipakai siapa saja.</p>
             </div>
 
-            <div class="projects-grid">
-                <a href="#" class="project-card reveal" data-delay="0">
-                    <div class="project-visual project-1">
-                        <span class="project-tag">Aplikasi Web</span>
+            <article class="featured-tool reveal" data-delay="60">
+                <!-- Visual / mockup -->
+                <div class="featured-visual" aria-hidden="true">
+                    <div class="phone-frame">
+                        <div class="phone-screen">
+                            <div class="phone-app-bar">
+                                <span class="phone-dot"></span>
+                                <span class="phone-dot"></span>
+                                <span class="phone-dot"></span>
+                            </div>
+                            <div class="phone-logo">
+                                <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <path d="M30 6c0 6 4 10 10 10v6c-4 0-7-1-10-3v15a11 11 0 1 1-11-11c.7 0 1.4.1 2 .2V29a5 5 0 1 0 4 5V6h5z"/>
+                                </svg>
+                            </div>
+                            <div class="phone-title">TikTok Downloader</div>
+                            <div class="phone-input">
+                                <span class="phone-input-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <path d="M10 13a5 5 0 0 0 7 0l3-3a5 5 0 0 0-7-7l-1 1"/>
+                                        <path d="M14 11a5 5 0 0 0-7 0l-3 3a5 5 0 0 0 7 7l1-1"/>
+                                    </svg>
+                                </span>
+                                <span class="phone-input-placeholder">tiktok.com/@user/video/...</span>
+                            </div>
+                            <div class="phone-cta">Download<span class="phone-cta-arrow">↓</span></div>
+                            <div class="phone-tags">
+                                <span>HD</span><span>No Watermark</span><span>MP3</span>
+                            </div>
+                        </div>
+                        <div class="phone-glow"></div>
                     </div>
-                    <div class="project-body">
-                        <h3>Lumen Notes</h3>
-                        <p>Aplikasi catatan minimalis yang fokus pada alur, kecepatan keyboard, dan UI yang tenang.</p>
-                        <ul class="chip-row small">
-                            <li>React</li><li>Tailwind</li><li>IndexedDB</li>
-                        </ul>
-                    </div>
-                    <span class="project-arrow">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                            <path d="M7 17 17 7"></path><path d="M7 7h10v10"></path>
-                        </svg>
-                    </span>
-                </a>
+                </div>
 
-                <a href="#" class="project-card reveal" data-delay="100">
-                    <div class="project-visual project-2">
-                        <span class="project-tag">Landing</span>
-                    </div>
-                    <div class="project-body">
-                        <h3>Vibe Studio</h3>
-                        <p>Eksperimen landing page yang mengeksplorasi glassmorphism, gradien, dan gerakan halus.</p>
-                        <ul class="chip-row small">
-                            <li>HTML</li><li>CSS</li><li>GSAP</li>
-                        </ul>
-                    </div>
-                    <span class="project-arrow">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                            <path d="M7 17 17 7"></path><path d="M7 7h10v10"></path>
-                        </svg>
+                <!-- Body -->
+                <div class="featured-body">
+                    <span class="featured-tag">
+                        <span class="badge-dot live"></span>
+                        Live
                     </span>
-                </a>
+                    <h3 class="featured-title">TikTok Downloader</h3>
+                    <p class="featured-desc">
+                        Tool web ringan untuk mengunduh video TikTok dengan cepat — tanpa watermark, kualitas HD,
+                        bisa juga ekstrak audio. Cukup tempel link, lalu unduh. Tidak ada login, tidak ada iklan rewel.
+                    </p>
 
-                <a href="#" class="project-card reveal" data-delay="200">
-                    <div class="project-visual project-3">
-                        <span class="project-tag">Tools AI</span>
-                    </div>
-                    <div class="project-body">
-                        <h3>Prompt Garden</h3>
-                        <p>Playground kecil untuk merapikan prompt, snippet, dan eksperimen AI.</p>
-                        <ul class="chip-row small">
-                            <li>Next.js</li><li>OpenAI</li><li>Postgres</li>
-                        </ul>
-                    </div>
-                    <span class="project-arrow">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                            <path d="M7 17 17 7"></path><path d="M7 7h10v10"></path>
-                        </svg>
-                    </span>
-                </a>
+                    <ul class="featured-features">
+                        <li>
+                            <span class="feature-bullet"></span>
+                            Tanpa watermark, hasil bersih siap pakai
+                        </li>
+                        <li>
+                            <span class="feature-bullet"></span>
+                            Pilihan kualitas HD &amp; ekstraksi audio MP3
+                        </li>
+                        <li>
+                            <span class="feature-bullet"></span>
+                            Antarmuka cepat, responsif, dan mobile-friendly
+                        </li>
+                    </ul>
 
-                <a href="#" class="project-card reveal" data-delay="300">
-                    <div class="project-visual project-4">
-                        <span class="project-tag">Open Source</span>
+                    <ul class="chip-row">
+                        <li>Web Tool</li><li>Gratis</li><li>No Login</li><li>Mobile Friendly</li>
+                    </ul>
+
+                    <div class="featured-cta">
+                        <a class="btn btn-primary" href="https://tiktok.azizverse.my.id" target="_blank" rel="noopener noreferrer">
+                            Coba sekarang
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M7 17 17 7"></path><path d="M7 7h10v10"></path>
+                            </svg>
+                        </a>
+                        <a class="btn btn-ghost" href="https://tiktok.azizverse.my.id" target="_blank" rel="noopener noreferrer">
+                            tiktok.azizverse.my.id
+                        </a>
                     </div>
-                    <div class="project-body">
-                        <h3>Tiny UI Kit</h3>
-                        <p>Kumpulan komponen pilihan yang aksesibel dan mudah ditemakan untuk proyek hobi.</p>
-                        <ul class="chip-row small">
-                            <li>TypeScript</li><li>Vite</li><li>Storybook</li>
-                        </ul>
-                    </div>
-                    <span class="project-arrow">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                            <path d="M7 17 17 7"></path><path d="M7 7h10v10"></path>
-                        </svg>
-                    </span>
-                </a>
-            </div>
+                </div>
+            </article>
         </section>
 
         <!-- ============== CONTACT ============== -->

@@ -163,7 +163,7 @@
         animateRing();
 
         // Hover state for interactive elements
-        const hoverables = document.querySelectorAll('a, button, .skill-card, .project-card');
+        const hoverables = document.querySelectorAll('a, button, .skill-card, .featured-tool');
         hoverables.forEach((el) => {
             el.addEventListener('mouseenter', () => ring.classList.add('hover'));
             el.addEventListener('mouseleave', () => ring.classList.remove('hover'));
