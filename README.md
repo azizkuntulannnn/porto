@@ -1,39 +1,39 @@
-# Minanul Aziz — Personal Portfolio
+# Minanul Aziz — Portofolio Personal
 
-A modern, elegant, and interactive personal-branding website built with plain
-HTML, CSS, and JavaScript — no build step required.
+Website personal branding modern, elegan, dan interaktif yang dibangun dengan
+HTML, CSS, dan JavaScript murni — tanpa proses build apa pun.
 
-> "A curious mind crafting calm, thoughtful experiences at the intersection of
-> technology, design, and good vibes."
+> "Pemikir yang penasaran, merangkai pengalaman yang tenang dan bermakna
+> di persimpangan teknologi, desain, dan vibe coding."
 
-## Features
+## Fitur
 
-- **Dark, minimalist UI** with glassmorphism, subtle gradients, and animated background orbs
-- **Smooth scroll**, scroll-progress bar, and active-link spy
-- **Reveal-on-scroll** animations and animated skill bars
-- **Custom cursor** (desktop only) with hover state on interactive elements
-- **Glowing tilt-light** effect on skill cards
-- **Responsive** mobile drawer navigation
-- **Accessible**: respects `prefers-reduced-motion`, semantic HTML, ARIA labels
+- **UI dark & minimalis** dengan glassmorphism, gradien halus, dan orb gradient yang beranimasi
+- **Smooth scroll**, scroll-progress bar, dan deteksi link aktif (active spy)
+- Animasi **muncul saat scroll** (fade/slide) dan progress bar skill yang terisi otomatis
+- **Custom cursor** (desktop) dengan efek hover pada elemen interaktif
+- Efek **tilt-light** (cahaya mengikuti kursor) pada kartu skill
+- **Responsif** — drawer menu untuk mobile
+- **Aksesibel**: menghormati `prefers-reduced-motion`, HTML semantik, label ARIA
 
-## Sections
+## Section
 
-1. **Hero** — large name, tagline, CTAs, meta strip, scroll hint
-2. **About Me** — short bio + animated `about.json` card
-3. **Skills / Expertise** — six interactive cards with progress bars and chips
-4. **Projects / Portfolio** — modern grid with gradient covers and hover effects
-5. **Contact** — WhatsApp, Email, and social links inside a glass card
+1. **Hero** — nama besar, tagline, tombol CTA, meta strip, indikator scroll
+2. **Tentang** — bio singkat + kartu animasi `about.json`
+3. **Keahlian** — enam kartu interaktif dengan progress bar dan chip teknologi
+4. **Proyek** — grid modern dengan cover gradien dan hover effect
+5. **Kontak** — WhatsApp, Email, dan media sosial dalam glass card
 
-## Tech
+## Teknologi
 
-- HTML5 / CSS3 (custom properties, grid, backdrop-filter)
-- Vanilla JavaScript (IntersectionObserver, requestAnimationFrame)
+- HTML5 / CSS3 (CSS variables, grid, backdrop-filter)
+- JavaScript vanilla (IntersectionObserver, requestAnimationFrame)
 - Google Fonts: **Inter** + **Space Grotesk**
 
-## Run locally
+## Cara menjalankan
 
-The site is fully static. Just open `index.html` in any modern browser, or
-serve it locally:
+Website ini sepenuhnya statis. Cukup buka `index.html` di browser modern,
+atau jalankan server lokal:
 
 ```bash
 # Python
@@ -43,22 +43,22 @@ python3 -m http.server 8000
 npx serve .
 ```
 
-Then visit <http://localhost:8000>.
+Lalu buka <http://localhost:8000>.
 
-## Project structure
+## Struktur proyek
 
 ```
 .
-├── index.html   # Markup for all sections
-├── styles.css   # Design tokens, layout, animations
-├── script.js    # Interactivity (scroll, cursor, reveal)
+├── index.html   # Markup untuk semua section
+├── styles.css   # Design token, layout, animasi
+├── script.js    # Interaktivitas (scroll, cursor, reveal)
 └── README.md
 ```
 
-## Customize
+## Kustomisasi
 
-- Update social links, WhatsApp number, and email in `index.html`
-  (`#contact` section).
-- Swap the project cards in `#projects` with your own work.
-- Tweak the brand gradient in `styles.css` via the `--grad-1`…`--grad-4`
-  CSS variables at the top of the file.
+- Ubah link sosial media, nomor WhatsApp, dan email di `index.html`
+  (section `#contact`).
+- Ganti empat project card di `#projects` dengan karya kamu sendiri.
+- Ubah warna brand di `styles.css` melalui CSS variable
+  `--grad-1`…`--grad-4` di bagian atas file.
